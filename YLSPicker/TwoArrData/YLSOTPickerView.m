@@ -108,7 +108,7 @@
 }
 
 //快速创建
-+ (instancetype)touchIDView
++(instancetype)pickerView
 {
     return [[self alloc]init];
 }

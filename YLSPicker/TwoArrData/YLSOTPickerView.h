@@ -16,7 +16,7 @@
 /** title */
 @property (nonatomic,strong) NSString *title;
 //快速创建
-+(instancetype)touchIDView;
++(instancetype)pickerView;
 //弹出
 -(void)show;
 @end

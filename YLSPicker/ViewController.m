@@ -31,7 +31,7 @@
     NSArray *placeholderArr = @[@"Picker OneVlaue",@"Picker TwoVlaue",@"Picker ThreeVlaue"];
     for (int i = 0; i < 3; i ++)
     {
-        UITextField *text = [[UITextField alloc]initWithFrame:YLSRect(100/375, (140 + i * 60)/667, 175/375, 30/667)];
+        UITextField *text = [[UITextField alloc]initWithFrame:YLSRect(80/375, (140 + i * 60)/667, 215/375, 30/667)];
         text.borderStyle = UITextBorderStyleRoundedRect;
         text.backgroundColor = [UIColor lightGrayColor];
         text.tag = i + 1000;
