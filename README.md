@@ -141,9 +141,6 @@ YLSOPickerView *picker = [[YLSOPickerView alloc]init];
 }
  
  ``` 
- 
- 
- ![picker.gif](http://upload-images.jianshu.io/upload_images/1062695-b30784726d45b274.gif?imageMogr2/auto-orient/strip)
 
 
 
