@@ -17,7 +17,9 @@ Select data from popup view which make by the picker
 - 之前想着封装起来用block传值什么的，但是问题是我对block并不是很了解，就用了通知传值，等接下来会花时间去学习，之后再更新这个项目。
 
 #### 用法
-用起来说方便也挺方便，说不方便的话，也着实有些不是很方便  
+因为封装的不是特别好，所以用起来需要写的东西不算少。而且分下来写的三个picker其实道理都是一样的，所以要是有大神会封装啥的，可以自己研究研究封装，然后教下我。
+用法几乎一样，差别就是传的值不一样。其实只需要看看代码，基本上就都明白了
+  
 
 <h5>单组数据的使用</h5>
 - 单组数据，引入`OneArrData`文件夹
@@ -35,7 +37,8 @@ YLSOPickerView *picker = [[YLSOPickerView alloc]init];
  - 最后在viewDidload里面接收下通知，然后在方法中写你需要把获取的值放在哪
 
  ```
- - (void)viewDidLoad {
+ - (void)viewDidLoad 
+ {
     [super viewDidLoad];
     //接受通知
  	[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(getValue:) name:@"value" object:nil];
@@ -47,7 +50,99 @@ YLSOPickerView *picker = [[YLSOPickerView alloc]init];
     self.textFeild.text = notification.object;
 }
  
+ ```  
+ 
+ 
+ 
+<h5>两组联动数据的使用</h5>
+- 单组数据，引入`TwoArrData`文件夹
+- 引入头文件`#import "YLSOTPickerView.h"`
+- 在点击事件或者需要弹出事件中写下下面的代码    
+
+```
+//你需要选择的数组数据
+        YLSOTPickerView *picker = [[YLSOTPickerView alloc]init];
+        picker.title = @"Select Cars";
+ //这里我传得值是字典形式，大家也可以传数组形式，那样的话在YLSOTPickerView.m文件里大家需要修改一下部分内容
+        NSDictionary *dict = @{@"German":@[@"BMW",@"Audi",@"Volkswagen",@"Volvo",@"Mercedes"],
+                               @"American":@[@"Ford",@"Dodge",@"Chrysler",@"Cadililac"],
+                               @"Japanese":@[@"Toyota",@"Nissian",@"Mazda",@"Lexus",@"Honda"]};
+        picker.dict = dict;
+        [picker show];
+
+ ```  
+ 也可以是下面这种形式的数据  
+ 
  ```
+       picker.array = @[
+                         @{
+                             @"cityName":@"German",
+                             @"cars":@[@"BMW",@"Audi",@"Volkswagen",@"Volvo",@"Mercedes"]
+                            }
+                         ,@{
+                             @"cityName":@"American",
+                            @"cars":@[@"Ford",@"Dodge",@"Chrysler",@"Cadililac"]
+                             }
+                         ,@{
+                             @"cityName":@"Japenese",
+                            @"cars":@[@"Toyota",@"Nissian",@"Mazda",@"Lexus",@"Honda"]
+                             }
+                         ];
+
+ ```
+ 
+ - 最后在viewDidload里面接收下通知，然后在方法中写你需要把获取的值放在哪
+
+ ```
+ - (void)viewDidLoad 
+ {
+    [super viewDidLoad];
+    //接受通知
+ 	[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(getTwoValue:) name:@"TwoValues" object:nil];
+ }
+ 
+ //实现通知方法
+ -(void)getTwoValue:(NSNotification *)notification
+{
+    self.textFeild.text = notification.object;
+}
+ 
+ ```
+
+
+<h5>三组不相关的数据使用</h5>
+- 单组数据，引入`ThreeArrData`文件夹
+- 引入头文件`#import "YLSThPickerView.h"`
+- 在点击事件或者需要弹出事件中写下下面的代码    
+
+```
+//你需要选择的数组数据
+ NSArray *array = @[@[@"Mr",@"Mrs",@"Ms",@"Miss"],@[@"Funny",@"Cool",@"Hot",@"Wonderful",@"Raining",@"Happy",@"Super",@"Lazy",@"Amazing",@"Bat",@"Iron",@"Bat",@"Rocket",@"Pretty",@"Lex"],@[@"Man",@"Luthor",@"Boy",@"Girl",@"Person",@"Cutie",@"Babe",@"Raccoon"]];
+        YLSThPickerView *picker = [[YLSThPickerView alloc]init];
+        picker.array = array;
+        picker.title = @"Describe Yourself";
+        [picker show];
+
+ ```   
+ - 最后在viewDidload里面接收下通知，然后在方法中写你需要把获取的值放在哪
+
+ ```
+ - (void)viewDidLoad 
+ {
+    [super viewDidLoad];
+    //接受通知
+ 	[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(getThreeValue:) name:@"ThreeValues" object:nil];
+ }
+ 
+ //实现通知方法
+ -(void)getThreeValue:(NSNotification *)notification
+{
+    self.textFeild.text = notification.object;
+}
+ 
+ ``` 
+ 
+ 
  
 
 
