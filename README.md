@@ -22,8 +22,8 @@ Select data from popup view which make by the picker
 <h5>单组数据的使用</h5>
 - 单组数据，引入`OneArrData`文件夹
 - 引入头文件`#import "YLSOPickerView.h"`
-- 在点击事件或者需要弹出事件中写下下面的代码
-	  
+- 在点击事件或者需要弹出事件中写下下面的代码  
+
 ```
 //你需要选择的数组数据
 NSArray *array = @[@"Picker OneVlaue",@"Picker TwoVlaue",@"Picker ThreeVlaue"];
