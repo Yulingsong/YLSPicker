@@ -117,10 +117,6 @@
 				183430AB1D785C7300395541 /* AppDelegate.m */,
 				183430AD1D785C7300395541 /* ViewController.h */,
 				183430AE1D785C7300395541 /* ViewController.m */,
-				183430B01D785C7300395541 /* Main.storyboard */,
-				183430B31D785C7300395541 /* Assets.xcassets */,
-				183430B51D785C7300395541 /* LaunchScreen.storyboard */,
-				183430B81D785C7300395541 /* Info.plist */,
 				183430A71D785C7300395541 /* Supporting Files */,
 			);
 			path = YLSPicker;
@@ -129,6 +125,10 @@
 		183430A71D785C7300395541 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				183430B01D785C7300395541 /* Main.storyboard */,
+				183430B31D785C7300395541 /* Assets.xcassets */,
+				183430B51D785C7300395541 /* LaunchScreen.storyboard */,
+				183430B81D785C7300395541 /* Info.plist */,
 				183430A81D785C7300395541 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -540,6 +540,7 @@
 				183430D31D785C7300395541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		183430D41D785C7300395541 /* Build configuration list for PBXNativeTarget "YLSPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +549,7 @@
 				183430D61D785C7300395541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		183430D71D785C7300395541 /* Build configuration list for PBXNativeTarget "YLSPickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +558,7 @@
 				183430D91D785C7300395541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
