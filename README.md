@@ -1,7 +1,7 @@
 # YLSPicker
 Select data from popup view which make by the picker
 
-#### 效果图：（在网页上看gif好像有限闪眼睛，所以如果使用的话大家可以阅读Readme.md）
+#### 效果图：（在网页上看gif好像（不是好像，应该就是）亮闪眼睛，所以如果使用的话大家可以阅读Readme.md）
 ![pckerVIew][image-1]
 
 ---- 
