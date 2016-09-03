@@ -155,5 +155,3 @@ YLSOPickerView *picker = [[YLSOPickerView alloc]init];
 
 
 [image-1]:	http://upload-images.jianshu.io/upload_images/1062695-edd9a35a6a382b55.gif?imageMogr2/auto-orient/strip
-
-[image-2]: http://upload-images.jianshu.io/upload_images/1062695-6ed28ed5a8f3504f.gif?imageMogr2/auto-orient/strip
