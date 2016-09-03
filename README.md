@@ -4,7 +4,7 @@ Select data from popup view which make by the picker
 #### 效果图：（在网页上看gif好像（不是好像，应该就是）亮闪眼睛，所以如果使用的话大家可以阅读Readme.md）
 <h5>2.0</h5>
 
-![9月-03-2016 17-49-51.gif](http://upload-images.jianshu.io/upload_images/1062695-5051762d50ff7123.gif?imageMogr2/auto-orient/strip)
+![picker.gif][image-2]
 
 <h5>1.0</h5>
 ![pckerVIew][image-1]
@@ -155,3 +155,5 @@ YLSOPickerView *picker = [[YLSOPickerView alloc]init];
 
 
 [image-1]:	http://upload-images.jianshu.io/upload_images/1062695-edd9a35a6a382b55.gif?imageMogr2/auto-orient/strip
+
+[image-2]: http://upload-images.jianshu.io/upload_images/1062695-6ed28ed5a8f3504f.gif?imageMogr2/auto-orient/strip
