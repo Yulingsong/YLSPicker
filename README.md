@@ -2,6 +2,11 @@
 Select data from popup view which make by the picker
 
 #### 效果图：（在网页上看gif好像（不是好像，应该就是）亮闪眼睛，所以如果使用的话大家可以阅读Readme.md）
+<h5>2.0</h5>
+
+![9月-03-2016 17-49-51.gif](http://upload-images.jianshu.io/upload_images/1062695-5051762d50ff7123.gif?imageMogr2/auto-orient/strip)
+
+<h5>1.0</h5>
 ![pckerVIew][image-1]
 
 ---- 
@@ -15,6 +20,7 @@ Select data from popup view which make by the picker
 - 样式什么的想要修改起来也很简单，使用也很简单。
 - 由于技术不行，还没怎么去思考怎么将三个选择器封装成一个选择器。所以有时候使用起来就有点麻烦。
 - 之前想着封装起来用block传值什么的，但是问题是我对block并不是很了解，就用了通知传值，等接下来会花时间去学习，之后再更新这个项目。
+- 这里添加了第四个，第四个是直接在主页面加一个view，然后进行相应的设置。
 
 #### 用法
 因为封装的不是特别好，所以用起来需要写的东西不算少。而且分下来写的三个picker其实道理都是一样的，所以要是有大神会封装啥的，可以自己研究研究封装，然后教下我。
@@ -141,6 +147,10 @@ YLSOPickerView *picker = [[YLSOPickerView alloc]init];
 }
  
  ``` 
+
+<h5>第四个文本框，就是用来测试用的</h5>
+就是在本页面添加一个view，来显示picker。
+
 
 
 
